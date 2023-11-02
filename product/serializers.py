@@ -63,9 +63,9 @@ class AddProduct_Serializer(serializers.ModelSerializer):
     category = serializers.CharField(write_only=True)
     subcategory = serializers.CharField(write_only=True)
     
-    unit = Unit_Serializer()
-    warranty = Warranty_Serializer()
-    product_variation = ProductVariationValue_Serializer()
+    # unit = Unit_Serializer()
+    # warranty = Warranty_Serializer()
+    # product_variation = ProductVariationValue_Serializer()
     class Meta:
         model = AddProduct
         fields = '__all__'
